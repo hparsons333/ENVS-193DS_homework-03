@@ -1,0 +1,48 @@
+---
+title: "Homework 03"
+author: "Helena Parsons"
+format: html
+---
+
+# Part 1: Setting up tasks
+
+## Reading in packages 
+
+```{r}
+#| label: reading-in-packages
+#| message: false
+#| warning: false
+library(tidyverse)
+library(here)
+library(janitor)
+library(readxl)
+```
+
+## Creating data object
+
+```{r}
+#| label: creating-kelp-object
+
+# creating new object for temp-kelp data
+kelp <- 
+  # reading csv
+  read_csv(
+    # directing function to data file 
+    here("data", "temp-kelp.csv"))
+
+# creating new object for personal data 
+job_search <- 
+  # reading csv
+  read_csv(
+    # directing function to data file
+    here("data", "personal-data.csv"))
+
+```
+
+
+
+
+
+
+
+
