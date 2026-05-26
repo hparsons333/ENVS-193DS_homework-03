@@ -58,9 +58,7 @@ job_search <-
 
 Because I solely want to understand the strength of the relationship between temperature and giant kelp frond elongation rate, I want to use a correlation test. 
 
-Correlation gives you a value for how strongly two variables are related, which is why it should be used for this analysis. 
-
-Multiple linear regression can be used when you want to understand the strength of a relationship, but is more commonly used to estimate the response variable value when an explanatory variable is at a certain value.
+A Pearson's r is used when there is a linear relationship between two variables. A Spearman's rho is used when the relationship between two variables is monotonic.
 
 ### 1b. Create a visualization
 
@@ -72,20 +70,90 @@ Multiple linear regression can be used when you want to understand the strength 
 - ***use different colors from the ggplot() defaults***
 - ***use a different theme from the ggplot() default***
 
-```{r}
 
-ggplot(data = kelp,
+```{r}
+#| label: visualiziation-of-temp-kelp
+
+# creating a new object
+temp_kelp_visual <- 
+  # base layer: ggplot
+  ggplot(
+    # df: kelp
+    data = kelp,
+    # x-axis: temp_c
+    # y-axis: kelp_elong
        mapping = aes(x = temp_c,
                      y = kelp_elong)) +
-  geom_point(color = "magenta4") +
+  # first layer: scatterplot
+  geom_point(
+    # changing color of points
+    color = "magenta4") +
+  # changing theme
   theme_classic() +
+  # changing title and axes titles
   labs(title = "Kelp frond elongation rates decrease as temp increases",
        x = expression("Temperature ("*~degree*C*")"),
-       y = expression("Giant kelp frond elongation rates cm per day ("~ ^-1 ~")"))
+       y = expression("Giant kelp frond elongation rates (cm/day^-1)"))
+
+# displaying object
+temp_kelp_visual
 ```
 
+### 1c. Check your assumptions and run your test
 
+#### Assumptions
 
+To run a Pearson's r, you want to ensure that there is a linear relationship between the two variables. From the scatter plot I created in part 1b, I can conclude that the relationship mostly appears to be linear.
+
+```{r}
+#| label: check-for-linear-relationship
+
+# displaying object from 1b
+temp_kelp_visual
+```
+
+I also want to make sure that the data is normally distributed. For this, I can create a QQ plot.
+
+```{r}
+# creating new object
+qqplot_temp <- 
+  # baselayer: ggplot
+  ggplot(
+    # df: kelp
+    data = kelp,
+    # sample: temp
+       aes(sample = temp_c)) +
+  # 
+       stat_qq(distribution=qnorm) +
+stat_qq_line( col = "black")
+
+qqplot_temp
+```
+
+```{r}
+qqplot_kelp <- ggplot(data = kelp,
+       aes(sample = kelp_elong)) +
+  stat_qq(distribution=qnorm) +
+  stat_qq_line( col = "black")
+
+qqplot_kelp
+```
+
+It seems that the variables are mostly normally distributed. 
+
+Additionally, the variables of kelp frond elongation rates and temperature need to be continuous, which they are since they are not integers, categorical, or ordinal data. 
+
+Finally, the observations also need to be independent, which is true because the observations of kelp growth rates do not all come from the same individual.
+
+All of our assumptions have been checked so we can now run the Pearson's r. 
+
+#### Pearson's r test
+
+```{r}
+cor.test(kelp$temp_c, 
+         kelp$kelp_elong,
+         method = "pearson")
+```
 
 
 
