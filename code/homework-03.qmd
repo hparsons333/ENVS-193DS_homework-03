@@ -121,21 +121,32 @@ qqplot_temp <-
   ggplot(
     # df: kelp
     data = kelp,
-    # sample: temp
+    # variable: temp
        aes(sample = temp_c)) +
-  # 
+  # first layer: distribution of temp observations
        stat_qq(distribution=qnorm) +
+  # second layer: expected distribution of temp
 stat_qq_line( col = "black")
 
+# displaying object
 qqplot_temp
 ```
 
 ```{r}
-qqplot_kelp <- ggplot(data = kelp,
+# creating new object
+qqplot_kelp <- 
+  # first layer: ggplot
+  ggplot(
+    # df: kelp
+    data = kelp,
+         # variable: kelp_elong
        aes(sample = kelp_elong)) +
+  # first layer: distribution of kelp elongation rate observations
   stat_qq(distribution=qnorm) +
+  # second layer: expected distribution of kelp elongation rate
   stat_qq_line( col = "black")
 
+# displaying object
 qqplot_kelp
 ```
 
@@ -150,14 +161,30 @@ All of our assumptions have been checked so we can now run the Pearson's r.
 #### Pearson's r test
 
 ```{r}
-cor.test(kelp$temp_c, 
+#| label: pearsons-r
+
+#correlation test
+cor.test(
+  # df: kelp
+  # first variable: temp
+  kelp$temp_c, 
+  # df: kelp
+  # second variable: kelp elongation rates
          kelp$kelp_elong,
+  # type of correlation test: pearson
          method = "pearson")
 ```
 
+### 1d. Results communication
 
+***In 1-3 sentences each, write about:***
 
+- ***Which test you used, and why (i.e. “To evaluate the strength of the relationship between temperature and giant kelp frond elongation rate, I used a…”)***
+- ***Your interpretation of your test (along with the appropriate summary of the test in parentheses)*** 
 
+To analyze the strength of the relationship between temperature and giant kelp frond elongation rate, I used a Pearson's r correlation test.
+
+I found that there is a moderate negative relationship between temperature and giant kelp frond elongation rate (Pearson's r = -0.69, t(30) = -5.2, p < 0.001, $\alpha$ = 0.05).
 
 
 
