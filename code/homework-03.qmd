@@ -1,7 +1,7 @@
 ---
 title: "Homework 03"
 author: "Helena Parsons"
-format: html
+format: pdf
 ---
 
 # Part 1: Setting up tasks
@@ -22,6 +22,8 @@ library(readxl)
 
 ```{r}
 #| label: creating-kelp-object
+#| message: false
+#| warning: false
 
 # creating new object for temp-kelp data
 kelp <- 
@@ -36,8 +38,56 @@ job_search <-
   read_csv(
     # directing function to data file
     here("data", "personal-data.csv"))
-
 ```
+
+# Part 2: Problems 
+
+## Problem 1: Giant kelp fronds 
+
+***Climate change threatens all ecosystems, including giant kelp (Macrocystis pyrifera) forests.***
+
+***You are interested in the potential relationship between ocean temperature (measured in ° C) and giant kelp frond elongation rate (also known as growth rate, measured in cm day-1).***
+
+***You conduct a field study in which you track giant kelp individuals growing in different temperatures (on average) and measure their elongation rates. Admittedly, this is not a perfect study, but you do the best with what you have!***
+
+### 1a. An appropriate test
+
+***In 1-3 sentences, name the appropriate test(s) to determine the strength of the relationship between temperature and giant kelp frond elongation rate (hint: there are two). Describe the differences between the two tests.***
+
+***Be specific in your response to demonstrate your understanding of the variables in this question.***
+
+Because I solely want to understand the strength of the relationship between temperature and giant kelp frond elongation rate, I want to use a correlation test. 
+
+Correlation gives you a value for how strongly two variables are related, which is why it should be used for this analysis. 
+
+Multiple linear regression can be used when you want to understand the strength of a relationship, but is more commonly used to estimate the response variable value when an explanatory variable is at a certain value.
+
+### 1b. Create a visualization
+
+***Create a visualization that would be appropriate for showing the relationship between temperature and giant kelp frond elongation rate.***
+
+***In addition to using the correct geometries, be sure to:***
+
+- ***relabel the x- and y-axes and include units***
+- ***use different colors from the ggplot() defaults***
+- ***use a different theme from the ggplot() default***
+
+```{r}
+
+ggplot(data = kelp,
+       mapping = aes(x = temp_c,
+                     y = kelp_elong)) +
+  geom_point(color = "magenta4") +
+  theme_classic() +
+  labs(title = "Kelp frond elongation rates decrease as temp increases",
+       x = expression("Temperature ("*~degree*C*")"),
+       y = expression("Giant kelp frond elongation rates cm per day ("~ ^-1 ~")"))
+```
+
+
+
+
+
 
 
 
