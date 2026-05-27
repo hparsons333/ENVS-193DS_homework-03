@@ -243,7 +243,9 @@ outside_eng_as_predictor <-
          x = outside_eng,
          y = job_search)) +
   # first layer: points
-geom_point(color = "midnightblue") +
+geom_jitter(color = "midnightblue",
+            height = 0,
+            width = 0.1) +
   # changing the title and axes' titles
   labs(title = "Effect of outside engagements on job search",
        subtitle = "2026-05-26",
@@ -286,4 +288,18 @@ geom_jitter(color = "darkorchid",
 stress_as_predictor
 ```
 
+### 2b. Caption writing
+
+**Figure 1: Time spent on job search differs with varying time spent on outside engagements.** Small dark blue points represent an observation of recorded time spent on searching and applying for jobs in a single day. Points are distributed across x-axis, which represents the hours spent on outside engagements, including school (lectures) and work (shifts).
+
+**Figure 2: Time spent on job search differs with varying levels of stress.** Small purple points represent an observation of recorded time spent on searching and applying for jobs. Points are distributed across x-axis, which represents the the level of stress recorded on that day.
+
+*Note: I changed the stress column so that it would be categorical, with a value of 0 meaning I have no assignments or chores (with chores including necessary appointments, extracurricular, or meetings that are not work or school related).*
+- *0: No assignments or chores (chores including chores, necessary appointments/meetings, or extracurricular activities)*
+
+- *1: One assignment or chore*
+- *2: Two of either assignments or chores or a mix of both*
+- *3: Three of either assignments or chores or a mix of both*
+- *4: Midterm on that date* 
+- *5: Midterm plus one or more of an assignment or chore*
 
