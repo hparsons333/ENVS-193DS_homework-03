@@ -1,4 +1,4 @@
-date,job_search (min),outside_eng (hour),stress,sleep,social_media (min),day_to_grad
+date,job_search,outside_eng,stress,sleep,social_media,day_to_grad
 4/25/2026,32,0,1,7,89,50
 4/26/2026,10,6,1,8,80,49
 4/27/2026,0,7,1,8,54,48
