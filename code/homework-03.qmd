@@ -340,17 +340,25 @@ This test allows the authors to compare if there is a significant difference in 
 
 **How clearly does the table represent the data underlying tests? 2-4 sentences.**
 
-I would say that the visual representation of the data is mostly clear, and it's easy to understand what the variables are, how they are organized into three sections (Water, vegetation, and soil), what the p-value is for the Wilcoxon rank sum tests, and the actual observed values for natural and restored pools (with units). However, it may have been more helpful to put the variables with significant differences at the top of each section, so the viewer would instantly direct their attention there.
+I would say that the visual representation of the data is mostly clear, and it's easy to understand what the variables are, how they are organized into three sections (Water, vegetation, and soil), what the p-value is for the Wilcoxon rank sum tests, and the actual observed values for natural and restored pools (with units). However, one thing that decreases the strength of the tables communication is how the significant values are scattered throughout the rows.
 
-Additionally, when I discussed this table with An after homework 2, she pointed out that it was strange for them to use the sum of minimum/maximum daily temperatures. I still haven't found a reason for this in the paper, and a better way to address this variable would be to take the average of minimum/maximum daily temperatures rather than the sum. 
+Additionally, when I discussed this table with An after homework 2, she pointed out that it was strange for them to use the sum of minimum/maximum daily temperatures, as it appears as though the values of the temperatures are way above what life could reasonably handle. I still haven't found a reason for this in the paper. 
 
 ### 4c. Aesthetic clarity
 
 **How well did the authors handle “visual clutter”? Is there any bolding/italic text to draw your eye to specific numbers? 2-4 sentences.**
 
-They provided good spacing in between the titles of variables and columns, as well as between the values of the columns themselves, which was good to reduce clutter. Additionally, they bolded the variables that were found to have a significant difference in value between restored and natural vernal pools. One thing they could've done to decrease visual clutter is to separate the different sections (Water, Vegetation, and Soil) into three different tables, because at first glance all the variables together are a little overwhelming. 
+They provided good spacing in between the titles of variables and columns, as well as between the values of the columns themselves, which was good to reduce clutter. Additionally, they bolded the variables that were found to have a significant difference in value between restored and natural vernal pools. One thing that is a little overwhelming is all the variables being represented at once, as it makes it hard to know which ones the authors want you to focus on. 
 
+### 4d. Recommendations
 
+**In 2-4 sentences, outline what recommendations would you make to make the figure or table better. What would you take out, add, or change? Provide explanations/justifications for each of your recommendations.**
+
+For my first recommendation, I would put the variables with significant differences at the top of each section, so the viewer would instantly direct their attention to the variables of interest.
+
+For my second recommendation, I would take the average of the minimum/maximum daily temperatures, rather than the sum, to help viewers better understand the overall trend of temperatures in the restored vs. vernal pools with values that are familiar to them.
+
+For my third recommendation I would separate the one table into three tables for each section of variables (Water, Vegetation, and Soil). This way the authors could call attention to the variables within each section that have significant differences, instead of overwhelming the viewer with all the variables at once. 
 
 
 
