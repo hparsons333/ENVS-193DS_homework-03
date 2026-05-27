@@ -218,9 +218,9 @@ cor.test(
 
 ***In your description, be specific about the tests, their components, and their relation to the variables.***
 
-Both the Pearson's r and the Spearman's rho correlation tests would have led me to reject the null hypothesis that there is no correlation between temperature and kelp frond elongation rates, because they both had a significant p-value that was less than the significance level of $\alpha$ = 0.05. 
+Both the Pearson's r and the Spearman's rho correlation tests would have led me to reject the null hypothesis that there is no correlation between temperature and kelp frond elongation rates, because they both had a significant p-value that was less than the significance level of $\alpha$ = 0.05.
 
-Additionally, the resulting r and rho was the same, -0.69, so both tests would lead for me to determine that there is a moderate negative correlation between temperature and kelp frond elongation rates. Both tests result in the same r and rho value because the variables they meet the assumptions of both the Pearson's r and the Spearman's rho. 
+Additionally, the resulting r and rho was the same, -0.69, so both tests would lead for me to determine that there is a moderate negative correlation between temperature and kelp frond elongation rates. Both tests result in the same r and rho value because the variables they meet the assumptions of both the Pearson's r and the Spearman's rho.
 
 ##Problem 2. Personal data
 
@@ -294,20 +294,19 @@ stress_as_predictor
 
 **Figure 2: Time spent on job search differs with varying levels of stress.** Small purple points represent an observation of recorded time spent on searching and applying for jobs. Points are distributed across x-axis, which represents the the level of stress recorded on that day.
 
-*Note: I changed the stress column so that it would be categorical, with a value of 0 meaning I have no assignments or chores (with chores including necessary appointments, extracurricular, or meetings that are not work or school related).*
-- *0: No assignments or chores (chores including chores, necessary appointments/meetings, or extracurricular activities)*
+*Note: I changed the stress column so that it would be categorical, with a value of 0 meaning I have no assignments or chores (with chores including necessary appointments, extracurricular, or meetings that are not work or school related).* - *0: No assignments or chores (chores including chores, necessary appointments/meetings, or extracurricular activities)*
 
-- *1: One assignment or chore*
-- *2: Two of either assignments or chores or a mix of both*
-- *3: Three of either assignments or chores or a mix of both*
-- *4: Midterm on that date* 
-- *5: Midterm plus one or more of an assignment or chore*
+-   *1: One assignment or chore*
+-   *2: Two of either assignments or chores or a mix of both*
+-   *3: Three of either assignments or chores or a mix of both*
+-   *4: Midterm on that date*
+-   *5: Midterm plus one or more of an assignment or chore*
 
 ## Problem 3. Affective visualization
 
 ### 3a. Describe in words what an affective visualization could look like for your personal data (3-5 sentences).
 
-For my personal data, I would want to affectively visualize how stress affected my job search based on the jitter plot I created in 2a. This is because I feel like what I personally observed after tracking my data was that perceived stress from my assignments/chores/midterms made me feel less motivated than on days when I was technically busier but felt less stress. 
+For my personal data, I would want to affectively visualize how stress affected my job search based on the jitter plot I created in 2a. This is because I feel like what I personally observed after tracking my data was that perceived stress from my assignments/chores/midterms made me feel less motivated than on days when I was technically busier but felt less stress.
 
 I would want to do an artwork/illustration like Jill Pelto did, where I would represent the x-axis as a shoulder, and the dots would be how much "weight" or stress I feel is on my shoulders. The points/observations closer to the right side where stress is highest would be represented by heavy things, like a rock, while the points to the left could be represented by balloons, to visualize how my job search increases with decreasing stress, and is more of a "weight off my shoulders."
 
@@ -329,10 +328,32 @@ I would want to do an artwork/illustration like Jill Pelto did, where I would re
 
 **What are the statistical tests the authors are using to address their main research question? (Note: you have already written about this in homework 2! Find that text and provide it again here!)**
 
-I chose the paper "Monitoring organic-matter decomposition and environmental drivers in restored vernal pools." The test in the paper that I will be focusing on is the Wilcoxon rank sum analysis. 
+I chose the paper "Monitoring organic-matter decomposition and environmental drivers in restored vernal pools." The test in the paper that I will be focusing on is the Wilcoxon rank sum analysis.
 
 This test allows the authors to compare if there is a significant difference in the median of environmental variables between natural and restored vernal pools. This would help the authors to understand in what ways a restored vernal pool would function differently from a natural vernal pool.
 
 **Insert the figure or table you described in Homework 2 here.**
+
+![](images/Screen Shot 2026-05-26 at 9.24.10 PM.png)
+
+### 4b. Visual clarity
+
+**How clearly does the table represent the data underlying tests? 2-4 sentences.**
+
+I would say that the visual representation of the data is mostly clear, and it's easy to understand what the variables are, how they are organized into three sections (Water, vegetation, and soil), what the p-value is for the Wilcoxon rank sum tests, and the actual observed values for natural and restored pools (with units). However, it may have been more helpful to put the variables with significant differences at the top of each section, so the viewer would instantly direct their attention there.
+
+Additionally, when I discussed this table with An after homework 2, she pointed out that it was strange for them to use the sum of minimum/maximum daily temperatures. I still haven't found a reason for this in the paper, and a better way to address this variable would be to take the average of minimum/maximum daily temperatures rather than the sum. 
+
+### 4c. Aesthetic clarity
+
+**How well did the authors handle “visual clutter”? Is there any bolding/italic text to draw your eye to specific numbers? 2-4 sentences.**
+
+They provided good spacing in between the titles of variables and columns, as well as between the values of the columns themselves, which was good to reduce clutter. Additionally, they bolded the variables that were found to have a significant difference in value between restored and natural vernal pools. One thing they could've done to decrease visual clutter is to separate the different sections (Water, Vegetation, and Soil) into three different tables, because at first glance all the variables together are a little overwhelming. 
+
+
+
+
+
+
 
 
