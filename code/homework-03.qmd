@@ -303,3 +303,10 @@ stress_as_predictor
 - *4: Midterm on that date* 
 - *5: Midterm plus one or more of an assignment or chore*
 
+## Problem 3: Affective visualization
+
+### 3a. Describe in words what an affective visualization could look like for your personal data (3-5 sentences).
+
+For my personal data, I would want to affectively visualize how stress affected my job search. This is because I feel like what I personally observed after tracking my data was that perceived stress from my assignments/chores/midterms made me feel less motivated than on days when I was technically busier but felt less stress. 
+
+I would want to do an artwork/illustration like Jill Pelto did, where I would represent the x-axis as a shoulder, and the dots would be how much "weight" or stress I feel is on my shoulders. The points/observations closer to the right side where stress is highest would be represented by heavy things, like a rock, while the points to the left could be represented by balloons, to visualize how my job search increases with decreasing stress, and is more of a "weight off my shoulders." 
