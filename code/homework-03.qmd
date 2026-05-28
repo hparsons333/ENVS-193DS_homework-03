@@ -92,7 +92,7 @@ temp_kelp_visual <-
   # changing title and axes' titles
   labs(title = "Kelp frond elongation rates decrease as temp increases",
        x = expression("Temperature ("*~degree*C*")"),
-       y = expression("Giant kelp frond elongation rates (cm/day^-1)"))
+       y = "Frond elongation rate (cm per day\U00B-1 /)")
 
 # displaying object
 temp_kelp_visual
@@ -222,7 +222,7 @@ Both the Pearson's r and the Spearman's rho correlation tests would have led me 
 
 Additionally, the resulting r and rho was the same, -0.69, so both tests would lead for me to determine that there is a moderate negative correlation between temperature and kelp frond elongation rates. Both tests result in the same r and rho value because the variables they meet the assumptions of both the Pearson's r and the Spearman's rho.
 
-##Problem 2. Personal data
+## Problem 2. Personal data
 
 ### 2a. Updating visualizations
 
@@ -243,9 +243,7 @@ outside_eng_as_predictor <-
          x = outside_eng,
          y = job_search)) +
   # first layer: points
-geom_jitter(color = "midnightblue",
-            height = 0,
-            width = 0.1) +
+geom_point(color = "midnightblue") +
   # changing the title and axes' titles
   labs(title = "Effect of outside engagements on job search",
        subtitle = "2026-05-26",
@@ -277,7 +275,7 @@ geom_jitter(color = "darkorchid",
             width = 0.15) +
   # changing title and label of axes
   labs(title = "Effect of stress on job search",
-       x = "Stress (Scale of 1-5)",
+       x = "Stress (Scale of 0-5)",
        y = "Time spent on Job Search (min)") +
   # changing the theme
   theme_bw() +
@@ -312,11 +310,19 @@ I would want to do an artwork/illustration like Jill Pelto did, where I would re
 
 ### 3b. Create a sketch (on paper) of your idea.
 
+![](images/Sketch.png)
+
 ### 3c. Make a draft of your visualization.
+
+![](images/draftofaffectivevisualization.png)
 
 ### 3d. Write an artist statement.
 
+My piece depicts the relationship between stress and the time I spend searching for and applying for jobs. I was influenced by Jill Pelto's paintings, because it allows for a lot of flexibility in the subjects you include in the visualization. The form of my artwork is colored pencil and marker on paper, and I created my work by first outlining in pencil,then adding shades of color in both marker and colored pencil, and then outlining in black marker.
+
 ### 3e. Prep your materials to share in class
+
+-   Hyperlink to slides: [affective_visualization_presentation](https://docs.google.com/presentation/d/1qJGBsRYaK_2V60zvN-mt3zw9OEUxZ7EEcaFiCZZSODw/edit?usp=sharing "Affective Visualization presentation")
 
 ## Problem 4. Statistical critique
 
@@ -334,7 +340,7 @@ This test allows the authors to compare if there is a significant difference in 
 
 **Insert the figure or table you described in Homework 2 here.**
 
-![](images/Screen Shot 2026-05-26 at 9.24.10 PM.png)
+![](images/Screen%20Shot%202026-05-26%20at%209.24.10%20PM.png)
 
 ### 4b. Visual clarity
 
@@ -342,13 +348,13 @@ This test allows the authors to compare if there is a significant difference in 
 
 I would say that the visual representation of the data is mostly clear, and it's easy to understand what the variables are, how they are organized into three sections (Water, vegetation, and soil), what the p-value is for the Wilcoxon rank sum tests, and the actual observed values for natural and restored pools (with units). However, one thing that decreases the strength of the tables communication is how the significant values are scattered throughout the rows.
 
-Additionally, when I discussed this table with An after homework 2, she pointed out that it was strange for them to use the sum of minimum/maximum daily temperatures, as it appears as though the values of the temperatures are way above what life could reasonably handle. I still haven't found a reason for this in the paper. 
+Additionally, when I discussed this table with An after homework 2, she pointed out that it was strange for them to use the sum of minimum/maximum daily temperatures, as it appears as though the values of the temperatures are way above what life could reasonably handle. I still haven't found a reason for this in the paper.
 
 ### 4c. Aesthetic clarity
 
 **How well did the authors handle “visual clutter”? Is there any bolding/italic text to draw your eye to specific numbers? 2-4 sentences.**
 
-They provided good spacing in between the titles of variables and columns, as well as between the values of the columns themselves, which was good to reduce clutter. Additionally, they bolded the variables that were found to have a significant difference in value between restored and natural vernal pools. One thing that is a little overwhelming is all the variables being represented at once, as it makes it hard to know which ones the authors want you to focus on. 
+They provided good spacing in between the titles of variables and columns, as well as between the values of the columns themselves, which was good to reduce clutter. Additionally, they bolded the variables that were found to have a significant difference in value between restored and natural vernal pools. One thing that is a little overwhelming is all the variables being represented at once, as it makes it hard to know which ones the authors want you to focus on.
 
 ### 4d. Recommendations
 
@@ -358,10 +364,4 @@ For my first recommendation, I would put the variables with significant differen
 
 For my second recommendation, I would take the average of the minimum/maximum daily temperatures, rather than the sum, to help viewers better understand the overall trend of temperatures in the restored vs. vernal pools with values that are familiar to them.
 
-For my third recommendation I would separate the one table into three tables for each section of variables (Water, Vegetation, and Soil). This way the authors could call attention to the variables within each section that have significant differences, instead of overwhelming the viewer with all the variables at once. 
-
-
-
-
-
-
+For my third recommendation I would separate the one table into three tables for each section of variables (Water, Vegetation, and Soil). This way the authors could call attention to the variables within each section that have significant differences, instead of overwhelming the viewer with all the variables at once.
